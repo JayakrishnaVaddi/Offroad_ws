@@ -1,0 +1,17 @@
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/launch/testing.launch.py
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/launch/default.launch.py
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/ament_index/resource_index/package_run_dependencies/vehicle_bringup
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/ament_index/resource_index/parent_prefix_path/vehicle_bringup
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/environment/ament_prefix_path.sh
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/environment/ament_prefix_path.dsv
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/environment/path.sh
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/environment/path.dsv
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/local_setup.bash
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/local_setup.sh
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/local_setup.zsh
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/local_setup.dsv
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/package.dsv
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/ament_index/resource_index/packages/vehicle_bringup
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/cmake/vehicle_bringupConfig.cmake
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/cmake/vehicle_bringupConfig-version.cmake
+/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/vehicle_bringup/share/vehicle_bringup/package.xml

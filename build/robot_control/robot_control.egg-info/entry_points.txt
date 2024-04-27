@@ -1,0 +1,4 @@
+[console_scripts]
+main_controller = robot_control.main_control:main
+testing = robot_control.test_control:main
+
