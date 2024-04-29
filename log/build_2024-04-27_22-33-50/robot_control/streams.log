@@ -1,0 +1,29 @@
+[0.449s] Invoking command in '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/src/robot_control': PYTHONPATH=/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/prefix_override:/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control build --build-base /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build install --record /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/install.log --single-version-externally-managed install_data
+[0.615s] running egg_info
+[0.615s] writing ../../build/robot_control/robot_control.egg-info/PKG-INFO
+[0.615s] writing dependency_links to ../../build/robot_control/robot_control.egg-info/dependency_links.txt
+[0.615s] writing entry points to ../../build/robot_control/robot_control.egg-info/entry_points.txt
+[0.615s] writing requirements to ../../build/robot_control/robot_control.egg-info/requires.txt
+[0.615s] writing top-level names to ../../build/robot_control/robot_control.egg-info/top_level.txt
+[0.616s] reading manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'
+[0.617s] writing manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'
+[0.618s] running build
+[0.618s] running build_py
+[0.618s] copying robot_control/main_control.py -> /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build/lib/robot_control
+[0.618s] copying robot_control/control_algorithm.py -> /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build/lib/robot_control
+[0.618s] running install
+[0.618s] running install_lib
+[0.619s] copying /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build/lib/robot_control/main_control.py -> /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control
+[0.619s] copying /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build/lib/robot_control/control_algorithm.py -> /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control
+[0.620s] byte-compiling /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control/main_control.py to main_control.cpython-310.pyc
+[0.621s] byte-compiling /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control/control_algorithm.py to control_algorithm.cpython-310.pyc
+[0.621s] running install_data
+[0.621s] running install_egg_info
+[0.623s] removing '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control-0.0.0-py3.10.egg-info' (and everything under it)
+[0.623s] Copying ../../build/robot_control/robot_control.egg-info to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control-0.0.0-py3.10.egg-info
+[0.625s] running install_scripts
+[0.645s] Installing control_algo script to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/robot_control
+[0.645s] Installing main_controller script to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/robot_control
+[0.646s] Installing testing script to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/robot_control
+[0.646s] writing list of installed files to '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/install.log'
+[0.663s] Invoked command in '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/src/robot_control' returned '0': PYTHONPATH=/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/prefix_override:/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control build --build-base /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build install --record /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/install.log --single-version-externally-managed install_data

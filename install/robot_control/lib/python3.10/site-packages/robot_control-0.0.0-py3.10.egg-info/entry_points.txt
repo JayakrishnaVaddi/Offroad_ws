@@ -1,4 +1,5 @@
 [console_scripts]
+control_algo = robot_control.control_algorithm:main
 main_controller = robot_control.main_control:main
 testing = robot_control.test_control:main
 

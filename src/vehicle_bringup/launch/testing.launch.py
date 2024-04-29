@@ -38,7 +38,7 @@ def generate_launch_description():
             executable='spawn_entity.py',
             arguments=[
                 '-entity', 'my_robot',
-                '-x', '-50', '-y', '-50', '-z', '0.1',
+                '-x', '-50', '-y', '-35', '-z', '0.1',
                 '-database', 'turtlebot3_burger', # Assuming using the 'turtlebot3_burger' model
                 # '-y', '20.0', '-z', '20.0', '-z', '20.0'  # Scale the robot size 1.5 times in all dimensions
             ],
