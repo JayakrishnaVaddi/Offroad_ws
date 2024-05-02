@@ -1,0 +1,24 @@
+[0.383s] Invoking command in '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/src/robot_control': PYTHONPATH=/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/prefix_override:/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control build --build-base /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build install --record /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/install.log --single-version-externally-managed install_data
+[0.526s] running egg_info
+[0.526s] writing ../../build/robot_control/robot_control.egg-info/PKG-INFO
+[0.527s] writing dependency_links to ../../build/robot_control/robot_control.egg-info/dependency_links.txt
+[0.527s] writing entry points to ../../build/robot_control/robot_control.egg-info/entry_points.txt
+[0.527s] writing requirements to ../../build/robot_control/robot_control.egg-info/requires.txt
+[0.527s] writing top-level names to ../../build/robot_control/robot_control.egg-info/top_level.txt
+[0.528s] reading manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'
+[0.528s] writing manifest file '../../build/robot_control/robot_control.egg-info/SOURCES.txt'
+[0.528s] running build
+[0.528s] running build_py
+[0.528s] running install
+[0.529s] running install_lib
+[0.529s] running install_data
+[0.530s] running install_egg_info
+[0.530s] removing '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control-0.0.0-py3.10.egg-info' (and everything under it)
+[0.531s] Copying ../../build/robot_control/robot_control.egg-info to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages/robot_control-0.0.0-py3.10.egg-info
+[0.531s] running install_scripts
+[0.543s] Installing control_algo script to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/robot_control
+[0.543s] Installing main_controller script to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/robot_control
+[0.543s] Installing testing script to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/robot_control
+[0.543s] Installing visualize_VFH script to /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/robot_control
+[0.544s] writing list of installed files to '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/install.log'
+[0.560s] Invoked command in '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/src/robot_control' returned '0': PYTHONPATH=/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/prefix_override:/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/install/robot_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/robot_control build --build-base /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/build install --record /home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/build/robot_control/install.log --single-version-externally-managed install_data

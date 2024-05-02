@@ -13,7 +13,7 @@ def random_location() -> float:
 def generate_launch_description():
 
     # Gazebo launch file (from gazebo_ros package)
-    gazebo_world = '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/src/vehicle_bringup/worlds/forest.world'
+    gazebo_world = '/home/ubuntu/JK/ASU/MAE_598_AV/Offroad_ws/src/vehicle_bringup/worlds/forest_more.world'
 
     gazebo_launch_file = os.path.join(get_package_share_directory('gazebo_ros'), 'launch', 'gazebo.launch.py')
 
@@ -38,7 +38,7 @@ def generate_launch_description():
             executable='spawn_entity.py',
             arguments=[
                 '-entity', 'my_robot',
-                '-x', '-50', '-y', '-35', '-z', '0.1',
+                '-x', '-50', '-y', '-40', '-z', '0.1',
                 '-database', 'turtlebot3_burger', # Assuming using the 'turtlebot3_burger' model
                 # '-y', '20.0', '-z', '20.0', '-z', '20.0'  # Scale the robot size 1.5 times in all dimensions
             ],

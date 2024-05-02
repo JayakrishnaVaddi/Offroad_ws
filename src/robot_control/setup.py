@@ -21,8 +21,8 @@ setup(
     entry_points={
         'console_scripts': [
             "main_controller = robot_control.main_control:main",
-            "testing = robot_control.test_control:main",
-            "control_algo = robot_control.control_algorithm:main"
+            "visualize_VFH = robot_control.plot_histogram:main",
+            "plot_path = robot_control.plot_path:main"
         ],
     },
 )

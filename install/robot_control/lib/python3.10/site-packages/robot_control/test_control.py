@@ -6,6 +6,13 @@ from geometry_msgs.msg import Twist, Quaternion
 import math
 import argparse
 import tf_transformations
+import numpy as np
+
+from enum import Enum, auto
+
+class State(Enum):
+    NAVIGATING = auto()
+    AVOIDING_OBSTACLE = auto()
 
 class Navigator(Node):
     def __init__(self, target_x, target_y):
@@ -20,17 +27,48 @@ class Navigator(Node):
         self.current_x = 0
         self.current_y = 0
         self.current_yaw = 0
+        self.state = State.NAVIGATING
+        self.avoidance_duration = 3.0 
+        self.obstacle_clear_time = None
 
     def lidar_callback(self, msg):
-        # Implement basic obstacle detection and avoidance
-        # For simplicity, this example assumes obstacles directly in the path will trigger a stop
-        if min(msg.ranges) < 0.5:  # Assume critical distance is 0.5 meters
-            self.stop_moving()  # Stop if an obstacle is too close
+        front_range = min(min(msg.ranges[0:30]), min(msg.ranges[-30:])) 
+        if front_range < 2.5:  
+                self.state = State.AVOIDING_OBSTACLE
+                self.obstacle_clear_time = self.get_clock().now() 
         else:
-            self.move_towards_target()  # Continue towards the target otherwise
+            if self.state == State.AVOIDING_OBSTACLE:
+                time_elapsed = (self.get_clock().now() - self.obstacle_clear_time).nanoseconds * 1e-9 
+                if time_elapsed >= self.avoidance_duration:
+                    self.state = State.NAVIGATING 
+                
+        if self.state == State.AVOIDING_OBSTACLE:
+            self.avoid_obstacle(msg)
+        else:
+            self.move_towards_target()
+
+    def avoid_obstacle(self, msg):
+        front = min(min(msg.ranges[0:30]), min(msg.ranges[-30:]))
+        left = min(msg.ranges[30:90])
+        right = min(msg.ranges[-90:-30])
+
+        twist = Twist()
+
+        if front < 1.0:  
+            if left > right:
+                twist.angular.z = float(0.5)
+            else:
+                twist.angular.z = float(-0.5)
+            
+            twist.linear.x = float(0.1)
+        else:
+            twist.linear.x = float(0.5)  
+            twist.angular.z = float(0)  
+
+        self.velocity_publisher.publish(twist)
+
 
     def odom_callback(self, msg):
-        # Update robot's current position and orientation
         self.current_x = msg.pose.pose.position.x
         self.current_y = msg.pose.pose.position.y
         orientation_q = msg.pose.pose.orientation
@@ -38,21 +76,12 @@ class Navigator(Node):
             [orientation_q.x, orientation_q.y, orientation_q.z, orientation_q.w])
 
     def move_towards_target(self):
-        # Simple proportional controller to steer towards the target
         twist = Twist()
         angle_to_target = math.atan2(self.target_y - self.current_y, self.target_x - self.current_x)
         angle_diff = self.normalize_angle(angle_to_target - self.current_yaw)
         
-        if abs(angle_diff) > 0.1:  # If the heading error is significant
-            twist.angular.z = 0.3 * angle_diff
-        if math.hypot(self.target_x - self.current_x, self.target_y - self.current_y) > 0.1:
-            twist.linear.x = 0.5  # Move forward only if aligned well
-
-        self.velocity_publisher.publish(twist)
-
-    def stop_moving(self):
-        # Helper function to stop the robot
-        twist = Twist()  # Zero velocity
+        twist.angular.z = 0.5 * angle_diff
+        twist.linear.x = 0.5 if abs(angle_diff) < 0.1 else 0.0
         self.velocity_publisher.publish(twist)
 
     @staticmethod

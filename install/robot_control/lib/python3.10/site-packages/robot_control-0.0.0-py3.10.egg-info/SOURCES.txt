@@ -10,9 +10,9 @@ setup.py
 ../../build/robot_control/robot_control.egg-info/zip-safe
 resource/robot_control
 robot_control/__init__.py
-robot_control/control_algorithm.py
 robot_control/main_control.py
-robot_control/test_control.py
+robot_control/plot_histogram.py
+robot_control/plot_path.py
 test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
